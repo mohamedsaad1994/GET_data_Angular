@@ -1,0 +1,21 @@
+<div class="container-fluid">
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th scope="col">id</th>
+    <th scope="col">Title</th>
+    <th scope="col">Completed</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let i of JsonData ;">
+    <td> {{ i.id }} </td>
+    <td>
+    <a [routerLink]="['/details', i.title]">{{ i.title }}</a>
+    
+    </td>
+    <td>{{ i.completed | booleanToString }}</td>
+  </tr>
+  </tbody>
+</table>
+</div>

@@ -1,18 +1,2 @@
-<div class="container-fluid">
-<table class="table table-striped">
-  <thead>
-  <tr>
-    <th scope="col">id</th>
-    <th scope="col">Title</th>
-    <th scope="col">Completed</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr *ngFor="let i of JsonData ;">
-    <td> {{ i.id }} </td>
-    <td>{{ i.title }}</td>
-    <td>{{ i.completed }}</td>
-  </tr>
-  </tbody>
-</table>
-</div>
+<button routerLink="/data"> Display Data </button>
+<router-outlet></router-outlet> 
